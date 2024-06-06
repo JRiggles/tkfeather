@@ -64,6 +64,13 @@ label.pack()
 
 > TODO
 
+### Included Dependencies
+
+> TODO
+
+- PNG Icons
+- Pillow >= 9.2.0
+
 ##
 
 ### Acknowledgements
