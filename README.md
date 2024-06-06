@@ -11,7 +11,7 @@ Current version: 0.1.0
 
 ### Import
 
-`import tkfeather` *or better yet* `from tkfeather import Feather`
+`from tkfeather import Feather`
 
 Initialization:
 
@@ -22,10 +22,10 @@ Initialization:
 - `size: int [optional]` - The size of the icon image in pixels, square
 (default: 24)
 
-Note: Sizes smaller than 24px are allowed but aren't recommended as the
+> Note: Sizes smaller than 24px are allowed but aren't recommended as the
 icon will become blurred
-
-The minimum allowed `size` is 1, and the maximum allowed `size` is 1024
+>
+> The minimum allowed `size` is 1, and the maximum allowed `size` is 1024
 
 Passing a `size` value  outside the range of 1 to 1024 will raise a
 `ValueError`
