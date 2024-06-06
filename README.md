@@ -1,4 +1,4 @@
-# tkfeather <img src="icons/feather.png" width=32>
+# tkfeather <img src="tkfeather-white.svg" width=48>
 
 #### tkinter support for [feather icons](https://feathericons.com)
 
