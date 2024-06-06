@@ -27,9 +27,6 @@ icon will become blurred
 >
 > The minimum allowed `size` is 1, and the maximum allowed `size` is 1024
 
-Passing a `size` value  outside the range of 1 to 1024 will raise a
-`ValueError`
-
 ### Properties
 - `Feather.icon` - an `ImageTk.PhotoImage` object for the given Feather
 icon
@@ -39,6 +36,8 @@ icon
 available Feather Icons
 
 ### Raises
+- Passing a `size` value  outside the range of 1 to 1024 will raise a
+`ValueError`
 - Trying to use an icon that doesn't exist will raise a `FileNotFoundError`
 
 ### Example
