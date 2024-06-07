@@ -3,9 +3,9 @@
 #### tkinter support for [feather icons](https://feathericons.com)
 
 ## Latest Changes
-Current version: 0.1.0
+Current version: 1.0.0-rc1
 
-- Initial release, under development
+- Initial release
 
 ## Usage
 
@@ -35,7 +35,7 @@ icon
 - `Feather.icons_available()` returns a list with the names of all
 available Feather Icons
 
-### Raises
+### Exceptions
 - Passing a `size` value  outside the range of 1 to 1024 will raise a
 `ValueError`
 - Trying to use an icon that doesn't exist will raise a `FileNotFoundError`
@@ -47,7 +47,7 @@ order to keep the image from being garbage-collected:
 ```python
 # this works
 feather = Feather('home')
-label = tk.Label(root, image=feather.icon)
+label = tk.Label(parent, image=feather.icon)
 label.pack()
 ```
 
@@ -55,17 +55,15 @@ If you don't maintain a reference to the image, it won't appear!
 
 ```python
 # this doesn't work - the label will have no image
-label = tk.Label(root, image=Feather('home').icon)
+label = tk.Label(parent, image=Feather('home').icon)
 label.pack()
 ```
 
 ### Installation
 
-> TODO
+`pip install tkfeather`
 
-### Included Dependencies
-
-> TODO
+### Packaged Dependencies
 
 - PNG Icons
 - Pillow >= 9.2.0
