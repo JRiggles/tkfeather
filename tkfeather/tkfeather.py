@@ -23,9 +23,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-Requires PIL >= 9.2.0
 """
 from pathlib import Path
 from PIL import Image, ImageTk
@@ -34,9 +31,6 @@ from PIL import Image, ImageTk
 class Feather:
     """
     Import:
-    >>> import tkfeather
-
-    Or better yet:
     >>> from tkfeather import Feather
 
     Initialization:
@@ -70,12 +64,12 @@ class Feather:
     order to keep the image from being garbage-collected:
     >>> # this works
     >>> feather = Feather('home')
-    >>> label = tk.Label(root, image=feather.icon)
+    >>> label = tk.Label(parent, image=feather.icon)
     >>> label.pack()
 
     If you don't maintain a reference to the image, it won't appear!
     >>> # this doesn't work - the label will have no image
-    >>> label = tk.Label(root, image=Feather('home').icon)
+    >>> label = tk.Label(parent, image=Feather('home').icon)
     >>> label.pack()
     """
 
