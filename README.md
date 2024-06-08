@@ -3,7 +3,7 @@
 #### tkinter support for [feather icons](https://feathericons.com)
 
 ## Latest Changes
-Current version: 1.0.0-rc1
+Current version: 1.0.0
 
 - Initial release
 
