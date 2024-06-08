@@ -35,6 +35,8 @@ icon
 - `Feather.icons_available()` returns a list with the names of all
 available Feather Icons
 
+> [!TIP] tkfeather v1.0.0 supports all of the icons available in Feather Icons v4.29.0
+
 ### Exceptions
 - Passing a `size` value  outside the range of 1 to 1024 will raise a
 `ValueError`
