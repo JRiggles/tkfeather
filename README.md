@@ -22,7 +22,8 @@ Initialization:
 - `size: int [optional]` - The size of the icon image in pixels, square
 (default: 24)
 
-> Note: Sizes smaller than 24px are allowed but aren't recommended as the
+> [!WARNING]
+> Sizes smaller than 24px are allowed but aren't recommended as the
 icon will become blurred
 >
 > The minimum allowed `size` is 1, and the maximum allowed `size` is 1024
@@ -35,7 +36,8 @@ icon
 - `Feather.icons_available()` returns a list with the names of all
 available Feather Icons
 
-> [!TIP] tkfeather v1.0.0 supports all of the icons available in Feather Icons v4.29.0
+> [!TIP]
+> tkfeather v1.0.0 supports all of the icons available in Feather Icons v4.29.0
 
 ### Exceptions
 - Passing a `size` value  outside the range of 1 to 1024 will raise a
