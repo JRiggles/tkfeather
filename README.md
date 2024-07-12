@@ -1,10 +1,12 @@
 # tkfeather <img src="tkfeather-white.svg" width=48>
 
 #### tkinter support for [feather icons](https://feathericons.com)
+[![Downloads](https://static.pepy.tech/badge/tkfeather)](https://pepy.tech/project/tkfeather)
+[![Downloads](https://static.pepy.tech/badge/tkfeather/month)](https://pepy.tech/project/tkfeather)
+[![Downloads](https://static.pepy.tech/badge/tkfeather/week)](https://pepy.tech/project/tkfeather)
 
 ## Latest Changes
 Current version: 1.0.0
-
 - Initial release
 
 ## Usage
