@@ -11,13 +11,23 @@ Current version: 1.0.0
 
 ## Usage
 
+### Installation
+tkfeather can be installed with pip
+```
+pip install tkfeather
+```
+
 ### Import
 
-`from tkfeather import Feather`
+Import tkfeather like so
+```
+from tkfeather import Feather
+````
 
-Initialization:
-
-`Feather(name: str, size: int [optional])`
+Once you've imported the `Feather` class, you can instantiate it as many times as you need
+```
+Feather(name: str, size: int [optional])
+```
 
 ### Args
 - `name: str` - The name of the Feather icon
@@ -64,10 +74,6 @@ If you don't maintain a reference to the image, it won't appear!
 label = tk.Label(parent, image=Feather('home').icon)
 label.pack()
 ```
-
-### Installation
-
-`pip install tkfeather`
 
 ### Packaged Dependencies
 
