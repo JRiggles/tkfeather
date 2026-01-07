@@ -1,9 +1,9 @@
 # tkfeather <img src="tkfeather-white.svg" width=48>
 
 #### tkinter support for [feather icons](https://feathericons.com)
-[![Downloads](https://static.pepy.tech/badge/tkfeather)](https://pepy.tech/project/tkfeather)
-[![Downloads](https://static.pepy.tech/badge/tkfeather/month)](https://pepy.tech/project/tkfeather)
-[![Downloads](https://static.pepy.tech/badge/tkfeather/week)](https://pepy.tech/project/tkfeather)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/tkfeather?period=total&units=ABBREVIATION&left_color=BLACK&right_color=RED&left_text=downloads)](https://pepy.tech/projects/simple-color-palette)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/tkfeather?period=monthly&units=ABBREVIATION&left_color=BLACK&right_color=BRIGHTGREEN&left_text=downloads%2Fmonth)](https://pepy.tech/projects/simple-color-palette)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/tkfeather?period=weekly&units=ABBREVIATION&left_color=BLACK&right_color=BLUE&left_text=downloads%2Fweek)](https://pepy.tech/projects/simple-color-palette)
 
 ## Latest Changes
 Current version: 1.0.0
