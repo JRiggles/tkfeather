@@ -1,5 +1,7 @@
 # tkfeather <img src="tkfeather-white.svg" width=48>
 
+<img src="screenshots/showcase.png" alt="an application window showing the available icons in tkfeather" />
+
 #### tkinter support for [feather icons](https://feathericons.com)
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/tkfeather?period=total&units=ABBREVIATION&left_color=BLACK&right_color=RED&left_text=downloads)](https://pepy.tech/projects/simple-color-palette)
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/tkfeather?period=monthly&units=ABBREVIATION&left_color=BLACK&right_color=BRIGHTGREEN&left_text=downloads%2Fmonth)](https://pepy.tech/projects/simple-color-palette)
