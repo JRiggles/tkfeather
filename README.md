@@ -16,19 +16,19 @@ Current version: 1.0.1
 
 ### Installation
 tkfeather can be installed with pip
-```
+```shell
 pip install tkfeather
 ```
 
 ### Import
 
 Import tkfeather like so
-```
+```python
 from tkfeather import Feather
 ````
 
 Once you've imported the `Feather` class, you can instantiate it as many times as you need
-```
+```python
 Feather(name: str, size: int [optional])
 ```
 
@@ -82,7 +82,7 @@ label.pack()
 
 To see an example application showcasing all of the available icons, you can run the `tkfeather.showcase` like so:
 
-```
+```shell
 python3 -m tkfeather.showcase
 ```
 
