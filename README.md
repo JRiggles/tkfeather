@@ -1,4 +1,4 @@
-# tkfeather <img src="tkfeather-white.svg" width=48>
+# tkfeather <img src="assets/tkfeather-white.svg" width=48>
 
 <img src="screenshots/showcase.png" alt="an application window showing the available icons in tkfeather" />
 
@@ -8,8 +8,9 @@
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/tkfeather?period=weekly&units=ABBREVIATION&left_color=BLACK&right_color=BLUE&left_text=downloads%2Fweek)](https://pepy.tech/projects/simple-color-palette)
 
 ## Latest Changes
-Current version: 1.0.0
-- Initial release
+Current version: 1.0.1
+- Fixes for and improvements to the example showcase
+- Minor performace improvements
 
 ## Usage
 
@@ -31,7 +32,7 @@ Once you've imported the `Feather` class, you can instantiate it as many times a
 Feather(name: str, size: int [optional])
 ```
 
-### Args
+### Parameters
 - `name: str` - The name of the Feather icon
 - `size: int [optional]` - The size of the icon image in pixels, square
 (default: 24)
@@ -51,7 +52,7 @@ icon
 available Feather Icons
 
 > [!TIP]
-> tkfeather v1.0.0 supports all of the icons available in Feather Icons v4.29.0
+> tkfeather v1.0.1 supports all of the icons available in Feather Icons v4.29.0
 
 ### Exceptions
 - Passing a `size` value  outside the range of 1 to 1024 will raise a
@@ -77,18 +78,22 @@ label = tk.Label(parent, image=Feather('home').icon)
 label.pack()
 ```
 
-### Packaged Dependencies
+## Showcase
+
+To see an example application showcasing all of the available icons, you can run the `tkfeather.showcase` like so:
+
+```
+python3 -m tkfeather.showcase
+```
+
+## Packaged Dependencies
 
 - PNG Icons
 - Pillow >= 9.2.0
 
-##
+## Acknowledgements
 
-### Acknowledgements
-
-Based on **Feather Icons** originally created by Cole Bemis
+Based on **Feather Icons** originally created by Cole Bemis, used under the MIT License
 
 - https://feathericons.com
 - https://github.com/feathericons/feather
-
-Under MIT License
