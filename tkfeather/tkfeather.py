@@ -4,7 +4,7 @@ A tkinter wrapper for Feather Icons by Cole Bemis - https://feathericons.com
 
 MIT License
 
-Copyright (c) 2024 John Riggles [sudo_whoami]
+Copyright (c) 2024-26 John Riggles [sudo_whoami]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+from functools import cached_property
 from pathlib import Path
+
 from PIL import Image, ImageTk
 
 
@@ -101,7 +103,7 @@ class Feather:
                 f'"{self._icon_name}" was not found'
             )
 
-    @property
+    @cached_property
     def icon(self) -> ImageTk.PhotoImage | None:
         """An `ImageTk.PhotoImage` object for the given Feather icon"""
         return self._icon_image
@@ -112,35 +114,3 @@ class Feather:
         # NOTE: iterdir keeps including a nonexisting .DS_Store file, so glob
         # it is...
         return sorted([icon.stem for icon in cls._ICONS_DIR.glob('*.png')])
-
-
-if __name__ == '__main__':  # example icon showcase app!
-    import tkinter as tk
-
-    root = tk.Tk()
-    root.config(background='whitesmoke')
-    root.minsize(root.winfo_screenwidth(), root.winfo_screenheight())
-    # root.resizable(False, False)
-    root.title('tkinter Feather Icons Showcase - Hover icons to see names')
-    app_icon = Feather('feather', size=16)
-    root.iconphoto(True, app_icon.icon)
-
-    icons_dict = {
-        name: Feather(name).icon for name in Feather.icons_available()
-    }
-
-    for index, (name, icon) in enumerate(icons_dict.items()):
-        row, column = divmod(index, 41)
-        label = tk.Label(
-            root,
-            background='whitesmoke',
-            # compound='left',
-            foreground='#111111',
-            image=icon,
-            # text=name,
-        )
-        # BUG: Hovertip text not showing up on Mac OS
-        # see https://github.com/python/cpython/issues/120083
-        label.grid(row=row, column=column, ipadx=4, ipady=4, sticky='w')
-
-    root.mainloop()
